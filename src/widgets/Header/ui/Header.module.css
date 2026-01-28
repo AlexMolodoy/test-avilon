@@ -1,0 +1,171 @@
+.header {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 88px 0 89px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0 12px;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border: 1px solid #E85D04;
+  border-radius: 4px;
+}
+
+.badgeText {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #FEFEFE;
+}
+
+.badgeYear {
+  color: #E85D04;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40px;
+  width: 256px;
+}
+
+.address,
+.phone {
+  display: flex;
+  align-items: center;
+  font-weight: 200;
+  letter-spacing: 0.4px;
+  gap: 8px;
+  font-size: 11px;
+  color: rgba(254, 254, 254, 0.7);
+}
+
+.phone {
+  letter-spacing: 0;
+
+}
+
+.phone a {
+  color: #FEFEFE;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.phone a:hover {
+  color: #E85D04;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FEFEFE;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #FEFEFE;
+}
+
+.navLinkActive {
+  color: #FEFEFE;
+  background-color: #F68E57;
+  opacity: 0.8;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.navLinkActive:hover {
+  color: #FEFEFE;
+  background-color: #F68E57;
+}
+
+.navLinkOrange {
+  color: #F68E57;
+}
+
+.navLinkOrange:hover {
+  color: #F68E57;
+}
+
+.breadcrumbs {
+  padding: 25px 107px 10px;
+  font-size: 12px;
+  color: #FEFEFE;
+  font-family: var(--font-family);
+}
+
+.breadcrumbs a {
+  transition: color 0.2s ease;
+  text-decoration: underline;
+}
+
+.breadcrumbs a:hover {
+  color: #FEFEFE;
+}
+
+.breadcrumbSeparator {
+  margin: 0 8px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 0 48px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 0 24px;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navList {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}

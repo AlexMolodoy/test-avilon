@@ -1,0 +1,54 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #FEFEFE;
+}
+
+.tankLogo {
+  display: flex;
+  align-items: center;
+  margin-right: -5px;
+}
+
+.tankImage {
+  height: 46px;
+  width: 36px;
+  object-fit: contain;
+}
+
+.combined {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.combinedImage {
+  width: 94px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.avilonText {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #FEFEFE;
+}
+
+.awardLogo {
+  display: flex;
+  align-items: center;
+}
+
+.awardImage {
+  width: 134px;
+  height: 40px;
+  object-fit: contain;
+}
