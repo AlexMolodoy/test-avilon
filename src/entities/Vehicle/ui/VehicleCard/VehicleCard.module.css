@@ -16,6 +16,7 @@
 }
 
 .number {
+  font-family: 'Tahoma';
   position: absolute;
   left: 0;
   top: 50%;
@@ -117,7 +118,7 @@
     left: auto;
     top: auto;
     transform: none;
-    font-size: 165px;
+    font-size: 180px;
     text-align: center;
     width: 100%;
     margin-bottom: 16px;
