@@ -215,7 +215,7 @@
 }
 
 /* Mobile styles - 425px and below */
-@media (max-width: 425px) {
+@media (max-width: 470px) {
   .header {
     padding: 0 16px;
   }
