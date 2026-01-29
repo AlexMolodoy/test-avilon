@@ -1,7 +1,7 @@
 .footer {
   background-color: #222222;
   padding: 48px 0;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -147,5 +147,33 @@
 
   .social {
     justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .right {
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .navColumn {
+    width: 100%;
+  }
+
+  .navColumn a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FEFEFE;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: color 0.2s ease;
   }
 }

@@ -40,3 +40,12 @@
 .fullWidth {
   width: 100%;
 }
+
+@media (max-width: 425px) {
+  .button {
+    width: 40vw;
+    height: 36px;
+    padding: 8px;
+    font-size: 12px;
+  }
+}

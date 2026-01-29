@@ -169,3 +169,152 @@
     gap: 16px;
   }
 }
+
+/* Burger button - hidden by default */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #FEFEFE;
+  transition: all 0.3s ease;
+}
+
+.burgerOpen span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerOpen span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile contacts hidden by default */
+.mobileContacts {
+  display: none;
+}
+
+.tankLogoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile styles - 425px and below */
+@media (max-width: 425px) {
+  .header {
+    padding: 0 16px;
+  }
+
+  .top {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  .logos {
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .tankLogoWrapper {
+    flex-shrink: 0;
+  }
+
+  /* Hide contacts in header on mobile */
+  .contacts {
+    display: none;
+  }
+
+  /* Show burger button */
+  .burger {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  /* Mobile navigation menu */
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    z-index: 1000;
+    transition: right 0.3s ease;
+    padding-top: 80px;
+  }
+
+  .navOpen {
+    right: 0;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0 16px;
+  }
+
+  .navList li {
+    width: 100%;
+    border-bottom: 1px solid rgba(254, 254, 254, 0.1);
+  }
+
+  .navLink {
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .navLinkActive {
+    background-color: transparent;
+    color: #F68E57;
+    padding: 16px 0;
+    border-radius: 0;
+  }
+
+  /* Show mobile contacts in menu */
+  .mobileContacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 16px;
+    margin-top: 24px;
+    border-top: 1px solid rgba(254, 254, 254, 0.1);
+  }
+
+  .mobileContacts .address,
+  .mobileContacts .phone {
+    justify-content: center;
+  }
+
+  /* Breadcrumbs mobile styles */
+  .breadcrumbs {
+    padding: 16px 0 10px;
+    font-size: 11px;
+  }
+
+  .breadcrumbSeparator {
+    margin: 0 4px;
+  }
+}
