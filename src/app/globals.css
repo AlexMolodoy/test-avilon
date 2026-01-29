@@ -1,8 +1,24 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Tahoma';
+  src: url('/fonts/tahoma.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tahoma';
+  src: url('/fonts/tahomabd.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-tank: 'Tank', sans-serif;
-  --font-tahoma: var(--font-tahoma), Tahoma, sans-serif;
+  --font-tahoma: 'Tahoma', sans-serif;
   --color-bg-dark: #121214;
   --color-white: #FEFEFE;
   --color-orange: #E85D04;
