@@ -176,5 +176,7 @@
 @media (max-width: 325px) {
   .number {
     font-size: 160px;
+    font-family: 'Tahoma';
+
   }
 }
