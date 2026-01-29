@@ -21,6 +21,23 @@ const tank = localFont({
   display: "swap",
 });
 
+const tahoma = localFont({
+  src: [
+    {
+      path: "../shared/fonts/tahoma.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../shared/fonts/tahomabd.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-tahoma",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Каталоги и прайс-листы | AVILON TANK",
   description: "Официальный дилер TANK в Москве. Каталоги и прайс-листы на автомобили Tank 300, 400, 500, 700",
@@ -33,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${inter.variable} ${abhayaLibre.variable} ${tank.variable}`}>
+      <body className={`${inter.variable} ${abhayaLibre.variable} ${tank.variable} ${tahoma.variable}`}>
         {children}
       </body>
     </html>
